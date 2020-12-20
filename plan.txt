@@ -1,0 +1,38 @@
+Navbar: Home About-me Skills Tools Projects Recent Contact 
+
+Front thing:    
+    Image
+    Headline
+    Short note
+About me
+    Short note about yourself
+    what have you done
+    what do you hope
+Skills
+    C++
+    Solidity
+    Javascript
+    Python
+Tools that I use:
+    Git
+    VS Code
+Projects:
+    Project titles, descriptions, learning, technology used, github repo
+    beautiful samples of your work
+    videos, gifs, interacting things
+Recent activity:
+    Medium articles 
+    Recent tweets
+Contact me: 
+    php form
+    relevant details
+Social media channels:
+    work things
+    fun media
+Footer:
+
+#Think about resume later.
+
+
+SO: ask how to align uniformly li items
+how to stack tweets horizontally

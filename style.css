@@ -1,0 +1,79 @@
+:root {
+    --col_prim: #003049;
+    --col_sec: #EAE2B7;
+    --col_ter: #FCBF49;
+    --col_qua: #FCBF49;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.nav, .navbar, .front_thing, .about-me, .lang, .project, .recent, .contact, .footer {
+    padding: 2%;
+    margin: 2%;
+    border-radius: 0.5em;
+    background-color: var(--col_sec);
+}
+.navbar, .nav{
+    background-color: var(--col_prim);
+}
+.nav{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.navbar a, .nav li{
+    font-size: 1.3em;
+    font-weight: 500;
+    padding-right: 1em;
+    padding-left: 1em;
+    border-radius: 0.5em;
+    background-color: var(--col_qua);
+}
+
+.about-me p, .tab-pane{
+    font-size: 1.3em;
+    background-color: var(--col_ter);
+    padding: 2%;
+    border-radius: 0.5em;
+}
+
+.front_thing .front_text{
+    font-size: 3em;
+    text-align: right;
+}
+
+.front_thing .front_desc{
+    font-size: 5em; 
+    text-align: right;
+}
+
+.front_thing img{
+    height: 40vh;
+}
+
+.lang .card{
+    width: 100%;
+    height: 100%;
+    padding: 2em;
+    border-radius: 0.5em;
+}
+.lang img{
+    max-width: 25%;
+}
+.lang h1{
+    font-size: 3em;
+    font-weight: 500;   
+}
+
+.work_el{
+    background-color: white;
+    padding: 2em;
+    border-radius: 0.5em;
+}
+
+.footer{
+    background-color: dimgrey;
+    font-size: 1em;
+}
