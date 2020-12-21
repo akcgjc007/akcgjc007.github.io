@@ -30,9 +30,4 @@ Social media channels:
     work things
     fun media
 Footer:
-
-#Think about resume later.
-
-
-SO: ask how to align uniformly li items
-how to stack tweets horizontally
+    Message

@@ -1,8 +1,11 @@
 :root {
-    --col_1: #000000;
-    --col_2: #A7C957;
-    --univ_rad: 0.2em;
+    --col_1: #7d8597;
+    --col_text: #33415c;
+    --univ_rad: 8px;
+    --col_foot: #D1D1D1;
+    --bs: 5px 5px 0px 0px var(--col_1);
 }
+
 
 @font-face {
     font-family: 'jetbrains';
@@ -18,47 +21,78 @@ html {
 }
 body{
     background-color: white;
-    font-family: 'varela';
-    color: var(--col_1);
+    font-family: 'jetbrains';
+    color: var(--col_text);
 }
 
-.nav, .navbar, .front_thing, .about-me, .lang, .project, .recent, .contact, .footer {
-    padding: 2%;
-    margin: 2%;
+.nav, .navbar, .front_thing, .lang, .project, .recent, .contact, .footer, .about-me, .about-me para {
+    padding: 1%;
+    margin: 1%;
     border-radius: var(--univ_rad);
-    box-shadow: 1px 1px 2px 2px var(--col_1);
+    box-shadow: var(--bs)
 }
 .navbar, .nav{
     background-color: var(--col_1);
-}
-.nav{
-    margin-left: 0;
-    margin-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
-.navbar a, .nav a{
+.navbar a, .project a{
     font-size: 1.3em;
     font-weight: 500;
-    padding-left: 1em;
-    padding-right: 1em;
+    margin: 0.5em;
     border-radius: var(--univ_rad);
     color: var(--col_1);
     background-color: white;
 }
+
+.project a{
+    padding: 0.5em;
+}
+.project li{
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.navbar .nav-link{
+    padding-left: 0.5em;
+}
+
+.navbar .navbar-toggler{
+    color: white;
+    margin-right: 0.5em;
+    border-color: white;
+    border-right: thick;
+}
+
+.navbar a{
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
 .nav a{
     padding-top: 0.2em;
     padding-bottom: 0.2em;
 }
 
-.about-me p, .tab-pane{
+.tab-pane{
     font-size: 1.3em;
     padding: 2%;
     border-radius: var(--univ_rad);
 }
 
+.about-me p{
+    font-size: 1.3em;
+    padding: 2%;
+}
+
+
+
+
 .front_thing .front_text{
     font-size: 3em;
     text-align: right;
+    
 }
 
 .front_thing .front_desc{
@@ -67,11 +101,13 @@ body{
     text-align: right;
 }
 
-.front_thing img{
+.front_thing .f_image{
     height: 40vh;
-    box-shadow: 1px 1px 2px 2px var(--col_1);
-    
+    box-shadow: var(--bs);
+    border-radius: 100%;
 }
+
+
 
 .card_o{
     padding: 1%;
@@ -82,7 +118,7 @@ body{
     height: 100%;
     padding: 1%;
     border-radius: var(--univ_rad);
-    box-shadow: 1px 1px 2px 2px var(--col_1);
+    box-shadow: 3px 3px 1px 1px var(--col_1);
 }
 
 
@@ -90,18 +126,58 @@ body{
     padding: 3%;
     max-width: 25%;
 }
-.lang h1{
-    font-size: 3em;
-    font-weight: 500;   
-}
 
 .work_el{
     padding: 2em;
     border-radius: var(--univ_rad);
 }
 
-.footer{
-    background-color: dimgrey;
-    font-size: 1em;
+.footer {
+    padding: 15px 0;
+    background: var(--col_foot);
+    border-top: 5px solid #999999;
     margin-bottom: 1em;
+    text-align: center;
 }
+
+.display-4{
+    text-align: center;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    border-radius: var(--univ_rad);
+    box-shadow: var(--bs);    
+}
+
+.display-5{
+    font-size: 3em;
+    text-align: center;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+    border-radius: var(--univ_rad);
+    box-shadow: var(--bs);    
+}
+
+.project-element{
+    margin-top: 4em;
+    margin-bottom: 4em;
+    border-radius: var(--univ_rad);
+    box-shadow: var(--bs);    
+}
+
+.about-me p{
+    padding-top: 2em;
+    border-radius: var(--univ_rad);
+    box-shadow: var(--bs);    
+}
+
+@media(min-width: 768px){
+    .front_div{
+        box-shadow: 3px 0 0 0 var(--col_1);
+    }
+}
+@media(max-width: 768px){
+    .f_image_cont{
+        text-align: right;
+    }
+}
+    
