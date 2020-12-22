@@ -1,12 +1,12 @@
 :root {
-    --col_1: #7d8597;
-    --col_text: #33415c;
+    --col_1: #242038;
+    --col_text: #00100B;
+    --col_white: #D8E1E9;
+    --col_foot: #7392B7;
     --univ_rad: 8px;
-    --col_foot: #D1D1D1;
+
     --bs: 5px 5px 0px 0px var(--col_1);
 }
-
-
 @font-face {
     font-family: 'jetbrains';
     src: url("fonts/jetbrains_mono/JetBrainsMono-Regular.ttf");
@@ -15,21 +15,25 @@
     font-family: 'varela';
     src: url("fonts/varela/VarelaRound-Regular.ttf");
 }
+@font-face{
+    font-family: 'titil';
+    src: url("fonts/Titillium_Web/TitilliumWeb-Regular.ttf");
+}
 
 html {
     scroll-behavior: smooth;
 }
 body{
-    background-color: white;
     font-family: 'jetbrains';
-    color: var(--col_text);
+    background: var(--col_white) !important;
 }
 
-.nav, .navbar, .front_thing, .lang, .project, .recent, .contact, .footer, .about-me, .about-me para {
-    padding: 1%;
-    margin: 1%;
+.nav, .navbar, .front_thing, .lang, .project, .recent, .contact, .media_links, .footer, .about-me, .about-me para {
+    padding: 1em;
+    margin: 1em;
     border-radius: var(--univ_rad);
-    box-shadow: var(--bs)
+    box-shadow: var(--bs);
+    
 }
 .navbar, .nav{
     background-color: var(--col_1);
@@ -43,7 +47,7 @@ body{
     margin: 0.5em;
     border-radius: var(--univ_rad);
     color: var(--col_1);
-    background-color: white;
+    background-color: var(--col_white);
 }
 
 .project a{
@@ -58,16 +62,21 @@ body{
     padding-left: 0.5em;
 }
 
+.main_navbar{
+    margin-top: 0.1em;
+}
+
 .navbar .navbar-toggler{
-    color: white;
+    color: var(--col_white);
     margin-right: 0.5em;
-    border-color: white;
+    border-color: var(--col_white);
     border-right: thick;
 }
 
 .navbar a{
     padding-left: 0.5em;
     padding-right: 0.5em;
+    text-align: center;
 }
 
 .nav a{
@@ -90,21 +99,23 @@ body{
 
 
 .front_thing .front_text{
-    font-size: 3em;
     text-align: right;
-    
+    font-size: 2em;
+    color: var(--col_1);
 }
 
 .front_thing .front_desc{
-    font-size: 5em;
-    font-weight: 800; 
     text-align: right;
+    color: var(--col_1);
+    font-size: 6em;
+    font-weight: 800; 
 }
 
 .front_thing .f_image{
-    height: 40vh;
+    filter: brightness(90%);
+    height: 20em;
     box-shadow: var(--bs);
-    border-radius: 100%;
+    border-radius: var(--univ_rad);
 }
 
 
@@ -133,11 +144,8 @@ body{
 }
 
 .footer {
-    padding: 15px 0;
     background: var(--col_foot);
-    border-top: 5px solid #999999;
     margin-bottom: 1em;
-    text-align: center;
 }
 
 .display-4{
@@ -170,14 +178,95 @@ body{
     box-shadow: var(--bs);    
 }
 
-@media(min-width: 768px){
+#contact_button{
+    color: red;
+    background-color: yellow;
+    border: 1px solid blue;
+    box-shadow: 2px 2px 0 0 blue;
+    font-weight: bold;
+}
+
+@media(min-width: 768px){ /* for > med devices */
     .front_div{
         box-shadow: 3px 0 0 0 var(--col_1);
     }
+
 }
-@media(max-width: 768px){
+@media(max-width: 768px){  /* for med and larger devices */ 
     .f_image_cont{
-        text-align: right;
+        text-align: center;
     }
-}
+    .front_thing .front_desc, .front_thing .front_text{
+        text-align: center;
+    }
     
+}
+
+.fab{
+    width: auto;
+    cursor: pointer;
+    filter: brightness(60%);
+    font-size: 2.5em;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    padding-left: 0.2em;
+    padding-right: 0.2em;
+    margin-left: 0.1em;
+    margin-right: 0.1em;
+    
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    
+    color: var(--col_1);
+    border: 5px solid var(--col_1);
+    border-radius: var(--univ_rad);
+}
+.fab:hover {
+    
+    filter: brightness(200%);
+    font-size: 2.8em;
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+}
+.jumbotron{
+    margin-top: 6em;
+}
+
+#back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    z-index: 99;
+    background-color: var(--col_1); /* Set a background color */
+    color: var(--col_white); /* Text color */
+    cursor: pointer;
+    padding: 1em;
+    border-radius: var(--univ_rad);
+}
+  
+#back-to-top:hover {
+    filter: brightness(150%);
+}
+#myemail{
+    margin: 0.2em;
+}
+
+.copy-button:focus{
+    font-size: 2em;
+    background-color: yellow !important;
+    color: green !important;
+    font-weight: 500;
+}
+
+.badge-x{
+    margin: 0.3em;
+    padding: 0.3em;
+    
+    border: 5px solid var(--col_foot);
+    border-radius: var(--univ_rad);
+}
+
+.pvw-title:focus {
+    content: 'whatever it is you want to add';
+}
