@@ -6,19 +6,12 @@ Front thing:
     Short note
 
 About me
-    Short note about yourself
+    short note about yourself
     what have you done
     what do you hope
 
 Skills
-    C++
-    Solidity
-    Javascript
-    Python
-
-Tools that I use:
-    Git
-    VS Code
+    Describe proficient languages and tools
 
 Projects:
     Brief description with 
@@ -28,10 +21,11 @@ Projects:
 Contact me: 
     php form
     relevant details
+    or a google form
 
-Social media channels:
-    work things
-    fun media
+# Social media channels:
+    # work things
+    # fun media
 
 Footer:
     Message
