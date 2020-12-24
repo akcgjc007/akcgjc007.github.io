@@ -1,6 +1,8 @@
 # akcgjc007.github.io
+# [<img src="./__sample/domain.jpg">](akcgj007.github.io)
 
 ## Introduction
+I have created my portfolio website using **bootstrap**. CSS is used to more customization. One of the main features provided with bootstrap were the ability to make it compatible for devices of all screens.
 
 ## Components
  - Navbar
@@ -29,8 +31,13 @@
  - Google form
  - SO cards
 
-## Metrics
- - Size: 250 kb(approx)
+## Sample pictures: Desktop
+
+<img height="150" src="./__sample/front.png">
+<img height="150" src="./__sample/skills.png">
+<img height="150" src="./__sample/projects.png">
+<img height="150" src="./__sample/acti.png">
+<img height="150" src="./__sample/talk.png">
 
 ## Contributors
 <table><tr><td align="center">
