@@ -135,12 +135,13 @@ body {
   border-radius: var(--univ_rad);
   box-shadow: var(--bs);
   color: var(--col_1);
+  font-size: 3em;
 }
 
 .display-5 {
   padding-top: 0.25em;
   padding-bottom: 0.25em;
-  font-size: 3em;
+  font-size: 2em;
 }
 
 .project-element {
