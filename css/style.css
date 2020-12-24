@@ -115,7 +115,7 @@ body {
 
 .lang img {
   padding: 3%;
-  height: 15vh;
+  height: 10em;
 }
 
 .work_el {
@@ -125,7 +125,7 @@ body {
 
 .footer {
   background: var(--col_foot);
-  margin-bottom: 0.4em;
+  padding-bottom: 2% !important;
 }
 
 .display-4,.display-5 {
@@ -254,10 +254,10 @@ body {
 
 @keyframes card-color {
   0% {
-    background-color: #FDB0BD;
+    background-color: #B4E7F8;
   }
   50% {
-    background-color: #B4E7F8;
+    background-color: #FDB0BD;
   }  
   100% {
     background-color: #ADFFCE;
