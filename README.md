@@ -1,6 +1,8 @@
 # akcgjc007.github.io
 
-## Features
+## Introduction
+
+## Components
  - Navbar
  - Jumbotron
  - About me
@@ -11,18 +13,24 @@
  - Social media links
  - Footer 
 
+## Features
+ - Responsive design
+
 ## Technology used
  - HTML
- - Bootstrap
+ - [Bootstrap](https://getbootstrap.com/)
  - CSS
  - Javascript
- - Font Awesome icons
+ - [Font Awesome icons](https://fontawesome.com/)
 
 ## Additional features
  - Twitter feed
- - Medium feed
+ - Medium feed(Pixelpoint.io)
  - Google form
  - SO cards
+
+## Metrics
+ - Size: 250 kb(approx)
 
 ## Contributors
 <table><tr><td align="center">
