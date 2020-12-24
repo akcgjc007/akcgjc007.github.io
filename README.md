@@ -16,6 +16,7 @@
  - Bootstrap
  - CSS
  - Javascript
+ - Font Awesome icons
 
 ## Additional features
  - Twitter feed
