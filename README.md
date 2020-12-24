@@ -1,5 +1,5 @@
-# akcgjc007.github.io
-# [<img src="./__sample/domain.jpg">](akcgj007.github.io)
+# <a href="akcgjc007.github.io" target="_blank">akcgjc007.github.io</a>
+# <img src="./__sample/domain.jpg">
 
 ## Introduction
 I have created my portfolio website using **bootstrap**. CSS is used to more customization. One of the main features provided with bootstrap were the ability to make it compatible for devices of all screens.
