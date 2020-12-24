@@ -2,7 +2,9 @@
 <html lang="en">
 
 <head>
-	<title>anupam</title>
+	<title>pAM</title>
+	<link rel="shortcut icon" href="./img/hotjar-brands.svg"/>
+
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -20,7 +22,10 @@
 	<!-- Main navbar -->
 	<nav class="main_navbar navbar navbar-expand-lg fixed-top">
 		<div class="container-fluid">
-			<a class="website-name nav-item navbar-brand" href="#">Anupam.xyz</a>
+			<a class="website-name navbar-brand" href="#">
+				<i style="color: #ff4500;" class="fab fa-hotjar"></i>
+				akcgjc007.github.io
+			</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
 				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<i class="fas fa-bars"></i>
@@ -28,9 +33,10 @@
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav ml-auto">
 					<li class="nav-item"><a class="nav-link" href="#about_me">About me</a></li>
-					<li class="nav-item"><a class="nav-link" href="#skills">What I use</a></li>
+					<li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
 					<li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-					<li class="nav-item"><a id="contact_button" class="nav-link" href="#contact_me">Contact me</a></li>
+					<li class="nav-item"><a class="nav-link" href="#rec_act">Recent Activity</a></li>
+					<li class="nav-item contact-me"><a class="nav-link" href="#contact_me">Lets talk  <i class="fas fa-comments"></i></a></li>
 				</ul>
 			</div>
 		</div>
@@ -72,7 +78,7 @@
 					developer, and I like programming user applications. I have
 					worked on projects related to <b>smart contracts</b>. I like reading about different <b>cryptos</b>
 					and love to
-					study the underlying technologies behind different <b>blockchain platforms</b>. I want to be a
+					study and decrypt the underlying technologies behind different <b>blockchain platforms</b>. I want to be a
 					blockchain developer
 					and work for an innovative, passionate, collaborative and <b>ambitious</b> organization. Apart from
 					work, I love eating good food,
@@ -86,9 +92,9 @@
 	<!-- Languages -->
 	<div id="skills" class="lang">
 		<div class="container">
-			<div class="display-4">What I use</div>
+			<div class="display-4">Skills</div>
 			<div class="row">
-				<div class="col-sm-6 col-md-4 card_o">
+				<div class="col-sm-6 col-md-4 card-outer">
 					<div class="card">
 						<div class="row">
 							<img class="responsive" src="img/sol_icon.png" alt="cpp_icon" />
@@ -97,7 +103,7 @@
 					</div>
 				</div>
 
-				<div class="col-sm-6 col-md-4 card_o">
+				<div class="col-sm-6 col-md-4 card-outer">
 					<div class="card">
 						<div class="row">
 							<img class="responsive " src="img/js_icon.png" alt="cpp_icon" />
@@ -106,7 +112,7 @@
 					</div>
 				</div>
 
-				<div class="col-sm-6 col-md-4 card_o">
+				<div class="col-sm-6 col-md-4 card-outer">
 					<div class="card">
 						<div class="row">
 							<img class="responsive" src="img/react.png" alt="cpp_icon" />
@@ -115,7 +121,7 @@
 					</div>
 				</div>
 
-				<div class="col-sm-6 col-md-4 card_o">
+				<div class="col-sm-6 col-md-4 card-outer">
 					<div class="card">
 						<div class="row">
 							<img class="responsive" src="img/git.png" alt="cpp_icon" />
@@ -124,7 +130,7 @@
 					</div>
 				</div>
 
-				<div class="col-sm-6 col-md-4 card_o">
+				<div class="col-sm-6 col-md-4 card-outer">
 					<div class="card">
 						<div class="row">
 							<img class="responsive" src="img/web3js.png" alt="cpp_icon" />
@@ -133,7 +139,7 @@
 					</div>
 				</div>
 
-				<div class="col-sm-6 col-md-4 card_o">
+				<div class="col-sm-6 col-md-4 card-outer">
 					<div class="card">
 						<div class="row">
 							<img class="responsive" src="img/cpp_icon.png" alt="cpp_icon" />
@@ -142,7 +148,7 @@
 					</div>
 				</div>
 
-				<div class="col-sm-6 col-md-4 card_o">
+				<div class="col-sm-6 col-md-4 card-outer">
 					<div class="card">
 						<div class="row">
 							<img class="responsive" src="img/py.png" alt="cpp_icon" />
@@ -151,7 +157,7 @@
 					</div>
 				</div>
 
-				<div class="col-sm-6 col-md-4 card_o">
+				<div class="col-sm-6 col-md-4 card-outer">
 					<div class="card">
 						<div class="row">
 							<img class="responsive" src="img/remix.png" alt="cpp_icon" />
@@ -171,25 +177,78 @@
 			<div class="display-4 col">Projects</div>
 
 			<div class="project-element container">
-				<div class="display-5">Inffecto</div>
+				<div class="display-5">beQ: a multi threaded web-crawler in C++</div>
 				<div class="container">
-
 					<div class="row p-outer">
 						<p class="p-content">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
-							maiores rem repellat earum aperiam veniam facilis tenetur illum
-							voluptatem deserunt ullam, suscipit officiis provident. Quo
-							reprehenderit culpa velit. Exercitationem, dignissimos!
+							Our college project team originally designed <b>makDa</b> 
+							to leverage the <b>slow</b> single-threaded web crawler. 
+							OS concepts such as sleeping, waking, locking, 
+							condition variables are used for obtaining <b>concurrency</b>. 
+							<b>C++</b> is used for most of its functionalities.
 						</p>
+						<a href="google.com" class="mx-auto"><b>
+							<i class="fab fa-github-alt"></i>
+								Github repo
+								<i class="fas fa-external-link-alt"></i>
+						</b></a>
 					</div>
 				</div>
 			</div>
+
+			<div class="project-element container">
+				<div class="display-5">Inffecto: a COVID support application in flutter</div>
+				<div class="container">
+					<div class="row p-outer">
+						<p class="p-content">
+							<b>Inffecto</b> is an <b>android</b> app made with <b>Flutter</b> and <b>Firebase</b>. 
+							The app uses several packages to provide users with 
+							different services, such as <b>habit reminders, emergency contact, 
+							and safety tests</b>. Apart from the coding part, we have to work on other aspects,
+							such as <b>user experience</b> and <b>visual design</b>.
+						</p>
+						<a href="google.com" class="mx-auto"><b>
+							<i class="fab fa-github-alt"></i>
+								Github repo
+								<i class="fas fa-external-link-alt"></i>
+						</b></a>
+					</div>
+				</div>
+			</div>
+
+			
+			<div class="project-element container">
+				<div class="display-5">AVL Trees: height-balanced binary search trees</div>
+				<div class="container">
+					<div class="row p-outer">
+						<p class="p-content">
+							<b>AVL trees</b> are <b>efficient</b> and fast in comparison to usual <b>binary search trees</b>. 
+							I have used <b>C</b> to manipulate nodes and rotations easily. I have tested this against 
+							its competitor <b>red-black tree</b>, which is used in std::set. 
+						</p>
+						<a href="google.com" class="mx-auto"><b>
+							<i class="fab fa-github-alt"></i>
+								Github repo
+								<i class="fas fa-external-link-alt"></i>
+						</b></a>
+					</div>
+				</div>
+			</div>
+
+			
+
+
+
+
+
+
 		</div>
 	</div>
 	<!-- END Project section -->
 
+
 	<!-- Recent Section -->
-	<!-- <div id="rec_act" class="recent">
+	<div id="rec_act" class="recent">
 		<div class="container">
 			<div class="display-4" align="center">
 				Recent Activity
@@ -211,17 +270,18 @@
 			</div>
 		</div>
 	</div>
-	</div> -->
+	</div>
 	<!-- End Recent Section -->
+
 
 	<!-- Contact me -->
 	<div id="contact_me" class="contact">
 		<div class="container">
-			<div class="display-4" align="center">Contact Me</div>
+			<div class="display-4" align="center">Let's talk</div>
 			<div class="container pt-2">
 				<iframe
 					src="https://docs.google.com/forms/d/e/1FAIpQLSdzFZOqoeWB1RvXJcAxuBstH5SklDezMjgRbK6i1koLvp5A2w/viewform?embedded=true"
-					frameborder="0" marginheight="0" marginwidth="0" width="100%" height="750">Loading…</iframe>
+					frameborder="0" marginheight="0" marginwidth="0" width="100%" height="800">Loading…</iframe>
 			</div>
 		</div>
 	</div>
@@ -231,16 +291,15 @@
 	<!-- Social Media links -->
 	<div class="media_links">
 		<div class="container">
-			<div class="row justify-content-center">
-				<div id="myemail" align="center">akcgjc007@gmail.com</div>
-				<div style="text-align: center;" class="container">
+			<div class="row justify-content-center badge-x">
+				<div class="mr-2" id="myemail">akcgjc007@gmail.com</div>
 					<button href="#"
-						onclick="document.getElementById('demo5').innerHTML = 'Email copied !'; CopyToClipboard('myemail');return false; "
+						onclick="CopyToClipboard('myemail');return false; "
 						type="button" id="demo5" class="btn btn-info copy-button">
-						Copy email.
+						<i class="far fa-copy"></i>
 					</button>
-				</div>
-
+			</div>
+			<div class="row justify-content-center">	
 				<div class="container">
 					<div class="row justify-content-center">
 						<div class="col badge-x text-center">
@@ -269,22 +328,19 @@
 				</div>
 
 				<a href="mailto:akcgjc007@gmail.com" target="_blank">
-					<i class="fab fa-google"></i>
+					<i class="b-icons fab fa-google"></i>
 				</a>
 				<a href="https://github.com/akcgjc007" target="_blank">
-					<i class="fab fa-github"></i>
+					<i class="b-icons fab fa-github"></i>
 				</a>
 				<a href="https://www.linkedin.com/in/akcgjc007/" target="_blank">
-					<i class="fab fa-linkedin-in"></i>
+					<i class="b-icons fab fa-linkedin-in"></i>
 				</a>
 				<a href="https://twitter.com/is_anupam" target="_blank">
-					<i class="fab fa-twitter"></i>
-				</a>
-				<a href="https://stackoverflow.com/users/12552972/anupam-kumar" target="_blank">
-					<i class="fab fa-stack-overflow"></i>
+					<i class="b-icons fab fa-twitter"></i>
 				</a>
 				<a href="https://akcgjc007.medium.com/" target="_blank">
-					<i class="fab fa-medium-m"></i>
+					<i class="b-icons fab fa-medium-m"></i>
 				</a>
 
 			</div>
@@ -334,11 +390,11 @@
 		crossorigin="anonymous"></script>
 
 	<!-- Twitter Section -->
-	<!-- <script async src="http://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
+	<script async src="http://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 	<!-- Medium section -->
-	<!-- <script src="https://medium-widget.pixelpoint.io/widget.js"></script> -->
-	<!-- <script>MediumWidget.Init({ renderTo: '#medium-widget', params: { "resource": "https://medium.com/@akcgjc007", "postsPerLine": 1, "limit": 3, "picture": "big", "fields": ["description", "author", "claps", "publishAt"], "ratio": "original" } })</script> -->
+	<script src="https://medium-widget.pixelpoint.io/widget.js"></script>
+	<script>MediumWidget.Init({ renderTo: '#medium-widget', params: { "resource": "https://medium.com/@akcgjc007", "postsPerLine": 1, "limit": 3, "picture": "big", "fields": ["description", "author", "claps", "publishAt"], "ratio": "original" } })</script>
 
 	<!-- LinkedIn badge -->
 	<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>

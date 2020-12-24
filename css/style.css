@@ -7,67 +7,62 @@
   --bs: 5px 5px 0px 0px var(--col_1);
 }
 
-html {
-  scroll-behavior: smooth;
+html{
+  scroll-behavior:smooth;
 }
 body {
   background: var(--col_white) !important;
 }
 
-.front_thing,
-.lang,
-.project,
-.recent,
-.contact,
-.media_links,
-.footer,
-.about-me,
-.about-me para {
+.front_thing, .lang, .project, .recent, .contact,
+.media_links, .footer, .about-me, .about-me para {
   padding: 1em;
   margin: 1em;
   border-radius: var(--univ_rad) !important;
   box-shadow: var(--bs);
 }
 
-.navbar a {
-  padding-left: 0.3em;
-  padding-right: 0.3em;
-  font-size: 2em;
-  font-weight: 500;
-  border-radius: var(--univ_rad);
-  color: var(--col_1);
-  background-color: var(--col_white);
-  margin-top: 0.1em;
-  margin-bottom: 0.1em;
-  padding-top: 0.1em !important;
-  padding-bottom: 0.1em !important;
-}
-
-.nav-item a {
-  padding-left: 0.3em !important;
-  margin-top: 0.1em;
-  margin-bottom: 0.1em;
-  padding-top: 0.1em !important;
-  padding-bottom: 0.1em !important;
-  margin-right: 0.25em;
-
-  font-size: 1.5em;
-  font-weight: 500;
-  border-radius: var(--univ_rad);
-  color: var(--col_1);
-  background-color: var(--col_white);
-  padding-top: 0;
-}
-
-.main_navbar {
+.navbar {
   background-color: var(--col_1);
 }
 
-.navbar .navbar-toggler {
+.navbar-toggler {
   color: var(--col_white);
   margin-right: 0.5em;
   border-color: var(--col_white);
   border-right: thick;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  border: 3px solid var(--col_white);
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  border-radius: var(--univ_rad);
+  color: var(--col_white);
+}
+
+.nav-item a, .contact-me a{
+  border: 3px solid var(--col_white);
+  border-radius: var(--univ_rad);
+  padding-left: 0.5em !important;
+  padding-right: 0.5em;
+  margin-right: 0.5em;
+  margin-top: 0.5em;
+  color: var(--col_white);
+  font-weight: bolder;
+}
+.nav-item a:hover, .navbar-brand:hover{
+  color: var(--col_1);
+  background-color: var(--col_white);
+}
+
+.contact-me a{
+  background-color: #ff4500;
+}
+.contact-me a:hover {
+  color: #ff4500;
+  background-color: var(--col_white);
 }
 
 .p-outer {
@@ -102,8 +97,11 @@ body {
   vertical-align: middle !important;
 }
 
-.card_o {
+.card-outer {
   padding: 2%;
+}
+
+.card-outer:hover{
 }
 
 .card img {
@@ -114,8 +112,6 @@ body {
 }
 
 .lang .card {
-  width: 100%;
-  height: 100%;
   padding: 1%;
   border-radius: var(--univ_rad);
   box-shadow: 3px 3px 1px 1px var(--col_1);
@@ -133,10 +129,10 @@ body {
 
 .footer {
   background: var(--col_foot);
-  margin-bottom: 1em;
+  margin-bottom: 0.4em;
 }
 
-.display-4 {
+.display-4,.display-5 {
   text-align: center;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
@@ -146,13 +142,9 @@ body {
 }
 
 .display-5 {
-  font-size: 3em;
-  text-align: center;
   padding-top: 0.25em;
   padding-bottom: 0.25em;
-  border-radius: var(--univ_rad);
-  box-shadow: var(--bs);
-  color: var(--col_1);
+  font-size: 3em;
 }
 
 .project-element {
@@ -160,23 +152,13 @@ body {
   margin-bottom: 4em;
   border-radius: var(--univ_rad);
   box-shadow: var(--bs);
+  
 }
 
 .about-me p {
   padding-top: 2em;
   border-radius: var(--univ_rad);
   box-shadow: var(--bs);
-}
-
-#contact_button {
-
-  color: white;
-  background-color: #7b8cde;
-  font-weight: bold;
-}
-#contact_button:hover {
-  color: #233d4d;
-  background-color: #c0e6de;
 }
 
 .p-content p,
@@ -201,15 +183,13 @@ body {
   }
 }
 
-.fab {
+.b-icons {
   width: auto;
   cursor: pointer;
   filter: brightness(60%);
   font-size: 2.5em;
-  padding-top: 0.2em;
-  padding-bottom: 0.2em;
-  padding-left: 0.2em;
-  padding-right: 0.2em;
+  padding: 0.2em;
+
   margin-left: 0.1em;
   margin-right: 0.1em;
 
@@ -220,7 +200,7 @@ body {
   border: 5px solid var(--col_1);
   border-radius: var(--univ_rad);
 }
-.fab:hover {
+.b-icons:hover {
   filter: brightness(200%);
   font-size: 2.8em;
   margin-top: 0.3em;
@@ -268,8 +248,4 @@ body {
 
   border: 4px solid var(--col_1);
   border-radius: var(--univ_rad);
-}
-
-.pvw-title:focus {
-  content: "whatever it is you want to add";
 }
