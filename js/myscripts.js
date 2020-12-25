@@ -1,3 +1,7 @@
+function navbarCollapse(){
+    $('.navbar-collapse').collapse('hide');
+}
+
 function CopyToClipboard(id) {
     var r = document.createRange();
     r.selectNode(document.getElementById(id));
