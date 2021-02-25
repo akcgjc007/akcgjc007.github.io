@@ -28,13 +28,24 @@
 			</button>
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav ml-auto">
-					<li class="nav-item"><a onclick="navbarCollapse();" class="nav-link" href="#about_me">About me</a>
+					<li class="nav-item"><a onclick="navbarCollapse();" class="nav-link" href="#about_me">
+						About me
+						<i class="fas fa-user-check"></i>
+					</a>
 					</li>
-					<li class="nav-item"><a onclick="navbarCollapse();" class="nav-link" href="#skills">Skills</a></li>
-					<li class="nav-item"><a onclick="navbarCollapse();" class="nav-link" href="#projects">Projects</a>
+					<li class="nav-item"><a onclick="navbarCollapse();" class="nav-link" href="#skills">
+						Skills
+						<i class="fas fa-tools"></i>
+					</a></li>
+					<li class="nav-item"><a onclick="navbarCollapse();" class="nav-link" href="#projects">
+						Projects
+						<i class="fas fa-building"></i>
+					</a>
 					</li>
-					<li class="nav-item"><a onclick="navbarCollapse();" class="nav-link" href="#rec_act">Recent
-							Activity</a></li>
+					<li class="nav-item"><a onclick="navbarCollapse();" class="nav-link" href="#rec_act">
+						Recent Activity
+						<i class="fas fa-pastafarianism"></i>
+					</a></li>
 					<li class="nav-item contact-me"><a onclick="navbarCollapse();" class="nav-link"
 							href="#contact_me">Lets talk <i class="fas fa-comments"></i></a></li>
 				</ul>
@@ -103,6 +114,15 @@
 				<div class="col-md-12 col-lg-6 card-outer">
 					<div class="card">
 						<div class="row">
+							<img class="responsive" src="img/cpp_icon.png" alt="cpp_icon" />
+							<h2>C++</h2>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-12 col-lg-6 card-outer">
+					<div class="card">
+						<div class="row">
 							<img class="responsive" src="img/sol_icon.png" alt="cpp_icon" />
 							<h2>Solc</h2>
 						</div>
@@ -145,14 +165,7 @@
 					</div>
 				</div>
 
-				<div class="col-md-12 col-lg-6 card-outer">
-					<div class="card">
-						<div class="row">
-							<img class="responsive" src="img/cpp_icon.png" alt="cpp_icon" />
-							<h2>C++</h2>
-						</div>
-					</div>
-				</div>
+
 			</div>
 		</div>
 	</div>
@@ -165,6 +178,37 @@
 			<div class="display-4 col">Projects</div>
 
 
+			<div class="project-element container">
+				<div class="display-5">Futurecast: a decentralized prediction market on Matic</div>
+				<div class="container">
+					<div class="row p-outer">
+						<p class="p-content">
+							An ethereum based smart contract where users can stake on a question and get exciting and
+							high returns.
+							Extensive testing is done on mocha with hardhat, Kovant testnet, Ganache. Mainly deployed on
+							matic testnet.
+							The smart contract was written in solidity with EIP1167 & OpenZeppelin. As a team member in
+							codeDcode, we made a prediction client in the front-end with react and SASS.
+						</p>
+
+						<div class="container row justify-content-center">
+							<b>
+								<a href="https://github.com/akcgjc007/kickstarter_u" target="_blank" class="mx-3">
+									<i class="fab fa-github-alt"></i>
+									Github repo
+									<i class="fas fa-external-link-alt"></i>
+								</a>
+								
+								<a href="https://futureforecast.netlify.app/" target="_blank" class="mx-3">
+									<i class="fas fa-rocket"></i>
+									Live application
+									<i class="fas fa-external-link-alt"></i>
+								</a>
+							</b>
+						</div>
+					</div>
+				</div>
+			</div>
 
 			<div class="project-element container">
 				<div class="display-5">Kickstarter: an ethereum based crowdfunding application</div>
@@ -196,11 +240,21 @@
 							permissions to both voting and organizing parties. Because it is a decentralized
 							application, it resides on the blockchain and cannot be hacked or changed.
 						</p>
-						<a href="https://github.com/akcgjc007/SafeElections" target="_blank" class="mx-auto"><b>
-								<i class="fab fa-github-alt"></i>
-								Github repo
-								<i class="fas fa-external-link-alt"></i>
-							</b></a>
+						<div class="container row justify-content-center">
+							<b>
+								<a href="https://github.com/akcgjc007/SafeElections" target="_blank" class="mx-3">
+									<i class="fab fa-github-alt"></i>
+									Github repo
+									<i class="fas fa-external-link-alt"></i>
+								</a>
+								
+								<a href="https://akcgjc007.github.io/SafeElections/" target="_blank" class="mx-3">
+									<i class="fas fa-rocket"></i>
+									Live application
+									<i class="fas fa-external-link-alt"></i>
+								</a>
+							</b>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -398,7 +452,7 @@
 	<!-- END Contact me -->
 
 	<!-- Footer -->
-	<div class="footer text-center">		
+	<div class="footer text-center">
 		Diffusing
 		<i class="fas fa-heart" style="color: darkorchid;"></i>
 		around the planet
@@ -412,7 +466,7 @@
 		<b>2021</b>
 		Anupam Kumar.
 
-		
+
 	</div>
 	<!-- END Footer -->
 
