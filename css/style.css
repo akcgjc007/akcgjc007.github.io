@@ -15,12 +15,28 @@ body {
 }
 
 .front_thing, .lang, .project, .recent, .contact,
-.media_links, .footer, .about-me, .about-me para {
+.media_links, .footer, .about-me, .about-me para, .hire-message {
   padding: 1em;
   margin: 1em;
   border-radius: var(--univ_rad) !important;
   box-shadow: var(--bs);
   padding-bottom: 5em !important;
+}
+
+.hire-message{
+  font-size: 1.3em;
+  list-style-position: inside;
+  text-align: center;
+  padding-bottom: 2em !important;
+
+  background-color:thistle;
+}
+
+.hm{
+  margin: 1em;
+  border-radius: var(--univ_rad) !important;
+  box-shadow: var(--bs);
+  padding: 1em;
 }
 
 .navbar {

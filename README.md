@@ -2,7 +2,13 @@
 # <img src="./__sample/domain.jpg">
 
 ## Introduction
-I have created my portfolio website using **bootstrap**. CSS is used to more customization. One of the main features provided with bootstrap were the ability to make it compatible for devices of all screens.
+ - I have created my portfolio website using **bootstrap**. 
+ - CSS is used to more customization. 
+ - Using bootstrap, I have made it compatible for varying screen sizes.
+
+## Deployment
+ - Github pages: http://akcgjc007.github.io/
+ - IPFS on fleek: https://anupamkumar.on.fleek.co/
 
 ## Components
  - Navbar
